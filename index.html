@@ -8,10 +8,24 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <header class="group">
-      <h1>Eric Riley</h1>
-      <div class="profile-pic">
-        <img src="Images/Eric-Covid-profile-pic.JPG" alt="Eric Riley profile picture with a mask.">
+    <header>
+      <div class="group">
+        <h1>Eric Riley</h1>
+        <div class="profile-pic">
+          <img src="Images/Eric-Covid-profile-pic.JPG" alt="Eric Riley profile picture with a mask.">
+        </div>
+      </div>
+      
+      <div class="wrapper">
+        <nav>
+          <ul id="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#contact-me">Contact</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -63,6 +77,13 @@
           <a href="https://github.com/rileric">GitHub</a>
           <a href="mailto:eriley92@gmail.com">Email</a>
         </div>
+
+        <!--- Contact Form using FormSpree--->
+        <form action="https://formspree.io/f/myybejzd" method="POST">
+          <input type="text" name="name">
+          <input type="email" name="_replyto">
+          <input type="submit" value="Send">
+        </form>
       </section>
         
 

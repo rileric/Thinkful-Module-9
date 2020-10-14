@@ -41,24 +41,46 @@ a:visited {
 a:hover {
   text-decoration: underline;
   background-color: gainsboro;
-  
 }
 a:active {
   background-color: gray;
 }
 
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 10px;
+
+}
+
+nav a:link, nav a:visited {
+  color: white;
+}
+
 /* Header flexbox items */
 .profile-pic {
   max-width: 200px;
+  padding 0;
   flex: 1;
+  border: solid white;
 }
 
 header h1 {
-  flex: 1;
-  font-size: 52
+  font-size: 64;
 }
 section h2{
   margin-bottom: 0;
+}
+
+/* Contact Form */
+form input, form textarea {
+  width:100%;
 }
 
 /*flexbox - general items  */
