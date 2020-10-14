@@ -1,0 +1,78 @@
+/* Standard box-sizing */
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+ /* border-style: solid;  TODO remove */
+}
+
+/* Basic styling */
+img {
+  width: 100%;
+}
+
+header, footer {
+  background: black;
+  color: #ffffff;
+}
+
+footer p{
+  align-content: center;
+}
+
+section {
+  border: solid;
+}
+.contacts a{
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+a:link {
+  color: blue;
+}
+a:visited {
+  color:blueviolet;
+}
+a:hover {
+  text-decoration: underline;
+  background-color: gainsboro;
+  
+}
+a:active {
+  background-color: gray;
+}
+
+/* Header flexbox items */
+.profile-pic {
+  max-width: 200px;
+  flex: 1;
+}
+
+header h1 {
+  flex: 1;
+  font-size: 52
+}
+section h2{
+  margin-bottom: 0;
+}
+
+/*flexbox - general items  */
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Media Query */
+@media all and (min-width: 800px) {
+
+
+  .group {
+    flex-direction: row;
+  }
+}
