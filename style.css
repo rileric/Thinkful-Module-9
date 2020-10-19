@@ -54,13 +54,15 @@ a:active {
 nav ul {
   list-style: none;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  margin: 5px 0;
 }
+
 
 nav ul li a {
   text-decoration: none;
   padding: 5px 10px;
-  margin: 30px;
+  margin: 5px 0;
 
 }
 
@@ -100,7 +102,7 @@ form input, form textarea {
 @media all and (min-width: 800px) {
 
 
-  .group {
+  .group, nav ul {
     flex-direction: row;
   }
 
@@ -110,5 +112,9 @@ form input, form textarea {
 
   .centered-mobile {
     margin-left: 0;
+  }
+
+  nav ul li a {
+    margin: 30px;
   }
 }
