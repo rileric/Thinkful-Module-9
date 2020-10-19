@@ -6,7 +6,6 @@ html {
 
 *, *::after, *::before {
   box-sizing: inherit;
- /* border-style: solid;  TODO remove */
 }
 
 /* Basic styling */
@@ -14,9 +13,14 @@ img {
   width: 100%;
 }
 
+.centered-block, .wrapper, .centered-mobile {
+  margin-left: auto;
+  margin-right: auto;
+}
 header, footer {
   background: black;
   color: #ffffff;
+  padding: 10px;
 }
 
 footer p{
@@ -24,6 +28,7 @@ footer p{
 }
 
 section {
+  margin: 10px;
   border: solid;
 }
 .contacts a{
@@ -55,7 +60,7 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   padding: 5px 10px;
-  margin: 10px;
+  margin: 30px;
 
 }
 
@@ -73,6 +78,7 @@ nav a:link, nav a:visited {
 
 header h1 {
   font-size: 64;
+  margin: 10px;
 }
 section h2{
   margin-bottom: 0;
@@ -96,5 +102,13 @@ form input, form textarea {
 
   .group {
     flex-direction: row;
+  }
+
+  .profile-pic{
+    box-align: right;
+  }
+
+  .centered-mobile {
+    margin-left: 0;
   }
 }

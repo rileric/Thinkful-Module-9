@@ -10,10 +10,10 @@
   <body>
     <header>
       <div class="group">
-        <h1>Eric Riley</h1>
-        <div class="profile-pic">
+        <div class="profile-pic centered-mobile">
           <img src="Images/Eric-Covid-profile-pic.JPG" alt="Eric Riley profile picture with a mask.">
         </div>
+        <h1 class="centered-block">Eric Riley</h1>
       </div>
       
       <div class="wrapper">
@@ -45,8 +45,10 @@
         <h2>Introductions</h2>
          <h3>I am...</h3>
          <p>I am Eric Riley</p>
+         <p>I am in Madison, WI. Previously, I grew up in Stevensville, MI and attended undergrad at the University of Michigan in Ann Arbor.</p>
          <h3>What I do</h3>
          <p>I have worked in software development for six years in Quality Assurance with some computer science classes for fun.</p>
+         
       </section>
 
       <!----
@@ -59,9 +61,17 @@
       <section id="about-me">
         <h2>About Me</h2>
         <h3>Career</h3>
-        <p>I love programming</p>
+        <p>I love programming! Not only is it a useful skill in everyday life but it also presents fun problems to solve. </p>
         <h3>Outside of Software Development</h3>
-        <p>I love to dance and play video games</p>
+        <p>I love to dance and play video games. I danced competitively on the University of Michigan's Ballroom team but now prefer social dancing like West Coast Swing.</p>
+        <h3>Services</h3>
+            <ul>
+              <li>Web development</li>
+              <li>Full stack development</li>
+              <li>Usability heuristic evaluations</li>
+              <li>Test plan mapping</li>
+              <li>Automated testing frameworks</li>
+            </ul>
       </section>
 
       <!----
@@ -80,8 +90,14 @@
 
         <!--- Contact Form using FormSpree--->
         <form action="https://formspree.io/f/myybejzd" method="POST">
-          <input type="text" name="name">
-          <input type="email" name="_replyto">
+          <label for="user-name">Name:</label>
+          <input id="user-name" type="text" name="name">
+
+          <label for="email">Email:</label>
+          <input id="email" type="email" name="_replyto">
+
+          <label for="form-message">Message:</label>
+          <textarea id="form-message" name="message"></textarea>
           <input type="submit" value="Send">
         </form>
       </section>
